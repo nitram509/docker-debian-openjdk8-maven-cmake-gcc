@@ -9,10 +9,9 @@ ENV JAVA_HOME="/usr/local/jdk" \
 
 RUN cd "/tmp" && \
     apt-get update && \
-    apt-get install apt-utils && \
-#    apt-get -y install wget && \
+    apt-get -y install wget && \
 #    apt-get -y install pgp && \
-#    apt-get -y install git && \
+    apt-get -y install git && \
     apt-get -y install gcc-4.8 && \
     apt-get -y install g++-4.8 && \
 #    apt-get -y install make && \
@@ -29,4 +28,8 @@ RUN cd "/tmp" && \
     ln -s /usr/bin/x86_64-linux-gnu-gcc-nm-4.8 /usr/bin/x86_64-linux-gnu-gcc-nm && \
     ln -s /usr/bin/x86_64-linux-gnu-gcc-ranlib-4.8 /usr/bin/x86_64-linux-gnu-gcc-ranlib && \
     ln -s /usr/bin/x86_64-linux-gnu-gcov-4.8 /usr/bin/x86_64-linux-gnu-gcov && \
-    pwd
+    echo "installing Maven ..." && \
+    wget -q "http://archive.apache.org/dist/maven/maven-3/$MAVEN_VERSION/binaries/apache-maven-$MAVEN_VERSION-bin.tar.gz" -O - | tar xvzf - && \
+    mv apache-maven-$MAVEN_VERSION /usr/share/maven && \
+    ln -s /usr/share/maven/bin/mvn /usr/bin/mvn && \
+    echo "done."
