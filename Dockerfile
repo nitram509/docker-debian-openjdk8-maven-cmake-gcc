@@ -14,8 +14,8 @@ RUN cd "/tmp" && \
     apt-get -y install git && \
     apt-get -y install gcc-4.8 && \
     apt-get -y install g++-4.8 && \
-#    apt-get -y install make && \
-#    apt-get -y install cmake && \
+    apt-get -y install make && \
+    apt-get -y install cmake && \
     ln -s /usr/bin/cpp-4.8 /usr/bin/cpp && \
     ln -s /usr/bin/gcc-4.8 /usr/bin/gcc && \
     ln -s /usr/bin/gcc-ar-4.8 /usr/bin/gcc-ar && \
