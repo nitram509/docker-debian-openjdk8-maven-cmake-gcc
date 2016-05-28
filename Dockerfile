@@ -22,24 +22,28 @@ RUN cd "/tmp" && \
     echo "setup GCC-4.8 links ..." && \
     rm -rf "/usr/bin/cpp" \
             "/usr/bin/gcc" \
+            "/usr/bin/g++" \
             "/usr/bin/gcc-ar" \
             "/usr/bin/gcc-nm" \
             "/usr/bin/gcc-ranlib" \
             "/usr/bin/gcov" \
             "/usr/bin/x86_64-linux-gnu-cpp" \
             "/usr/bin/x86_64-linux-gnu-gcc" \
+            "/usr/bin/x86_64-linux-gnu-g++" \
             "/usr/bin/x86_64-linux-gnu-gcc-ar" \
             "/usr/bin/x86_64-linux-gnu-gcc-nm" \
             "/usr/bin/x86_64-linux-gnu-gcc-ranlib" \
             "/usr/bin/x86_64-linux-gnu-gcov" && \
     ln -s /usr/bin/cpp-4.8 /usr/bin/cpp && \
     ln -s /usr/bin/gcc-4.8 /usr/bin/gcc && \
+    ln -s "/usr/bin/g++-4.8" "/usr/bin/g++" && \
     ln -s /usr/bin/gcc-ar-4.8 /usr/bin/gcc-ar && \
     ln -s /usr/bin/gcc-nm-4.8 /usr/bin/gcc-nm && \
     ln -s /usr/bin/gcc-ranlib-4.8 /usr/bin/gcc-ranlib && \
     ln -s /usr/bin/gcov-4.8 /usr/bin/gcov && \
     ln -s /usr/bin/x86_64-linux-gnu-cpp-4.8 /usr/bin/x86_64-linux-gnu-cpp && \
     ln -s /usr/bin/x86_64-linux-gnu-gcc-4.8 /usr/bin/x86_64-linux-gnu-gcc && \
+    ln -s "/usr/bin/x86_64-linux-gnu-g++-4.8" "/usr/bin/x86_64-linux-gnu-g++" && \
     ln -s /usr/bin/x86_64-linux-gnu-gcc-ar-4.8 /usr/bin/x86_64-linux-gnu-gcc-ar && \
     ln -s /usr/bin/x86_64-linux-gnu-gcc-nm-4.8 /usr/bin/x86_64-linux-gnu-gcc-nm && \
     ln -s /usr/bin/x86_64-linux-gnu-gcc-ranlib-4.8 /usr/bin/x86_64-linux-gnu-gcc-ranlib && \
