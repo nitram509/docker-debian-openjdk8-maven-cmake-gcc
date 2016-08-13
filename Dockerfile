@@ -1,10 +1,10 @@
 FROM docker.io/debian:jessie
 MAINTAINER Martin W. Kirst "x.nitram509@gmail.com"
 
-ENV ZULU_BASE_NAME="zulu8.15.0.1-jdk8.0.92-linux_x64"
+ENV ZULU_BASE_NAME="zulu8.17.0.3-jdk8.0.102-linux.x86_64"
 ENV ZULU_DOWNLOAD_URL="http://cdn.azul.com/zulu/bin/${ZULU_BASE_NAME}.tar.gz" \
     JAVA_HOME="/usr/local/${ZULU_BASE_NAME}" \
-    ZULU_CHECKSUM_MD5="509fef886f7c6992d0f6f133c4928ec9" \
+    ZULU_CHECKSUM_MD5="abd8b70fa1a743f74c43d21f0a9bea43" \
     MAVEN_HOME="/usr/share/maven" \
     MAVEN_VERSION="3.3.9"
 
