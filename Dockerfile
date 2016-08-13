@@ -1,6 +1,10 @@
 FROM docker.io/debian:jessie
 MAINTAINER Martin W. Kirst "x.nitram509@gmail.com"
-LABEL org.label-schema.vcs-url="https://github.com/nitram509/docker-debian-openjdk8-maven-cmake-gcc"
+LABEL org.label-schema.docker.dockerfile="/Dockerfile" \
+      org.label-schema.license="MIT" \
+      org.label-schema.url="https://github.com/nitram509/docker-debian-openjdk8-maven-cmake-gcc" \
+      org.label-schema.vcs-type="Git" \
+      org.label-schema.vcs-url="https://github.com/nitram509/docker-debian-openjdk8-maven-cmake-gcc.git"
 
 ENV ZULU_BASE_NAME="zulu8.17.0.3-jdk8.0.102-linux_x64"
 ENV ZULU_DOWNLOAD_URL="http://cdn.azul.com/zulu/bin/${ZULU_BASE_NAME}.tar.gz" \
